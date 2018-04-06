@@ -35,10 +35,11 @@ document.querySelector('#get-weather-button').addEventListener('click',getWeathe
 
 //deal with toggling between c and f in the display of the temperature. 
 inCelciusState=true;
-var temperature = 0;
+temperature = 0
 
 function showChangeInUnits() {
   var newTemperature = 0;
+  weatherTempDiv= document.querySelector('#weather-temp-div');
   if (inCelciusState) {
     newTemperature = (9.0/5.0)*temperature + 32; 
     newTemperature = newTemperature.toFixed(1);
@@ -55,5 +56,6 @@ function showChangeInUnits() {
 function toggleBetweenCandF() {
   inCelciusState = !inCelciusState;
   showChangeInUnits();
+  console.log('blahhhh');
 }
-document.querySelector('#weather-temp-div').addEventListener('click',toggleBetweenCandF());
+document.querySelector('#weather-temp-div').addEventListener('click',toggleBetweenCandF);
