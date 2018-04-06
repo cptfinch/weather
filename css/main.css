@@ -32,9 +32,20 @@ body {
     text-align: center;
     padding-top: 30px;
 }
-#weather-div {
-
+.show-weather-div {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+.container {
+    text-align: center;
+}
+.my-button {
+    background-color: lightgrey;
+    color: darkslategrey;
+}
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
